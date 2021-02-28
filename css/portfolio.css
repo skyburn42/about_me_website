@@ -1,0 +1,316 @@
+html {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  background-color: #6C733D;
+  width: 100vw;
+  margin: 0px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@keyframes color-changer {
+  0% {
+    color: black;
+  }
+
+  10% {
+    color: #373534;
+  }
+  20% {
+    color: #413E3D;
+  }
+  30% {
+    color: #65605F;
+  }
+  40% {
+    color: #7A7574;
+  }
+  50% {
+    color: #9F9897;
+  }
+  60% {
+    color: #7A7574;
+  }
+  70% {
+    color: #65605F;
+  }
+  
+  80% {
+    color: #413E3D;
+  }
+  90% {
+    color: #373534;
+  }
+  100% {
+    color: black;
+  }
+}
+
+
+#name {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 900;
+  animation-name: color-changer;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  background-color: #9DA65D;
+  padding: 32px 0px;
+  margin: 0px;
+}
+
+
+
+
+
+/* --------------top nav items---------------*/
+
+
+#mainNav {
+  display: flex;
+  justify-content: center;
+  background-color: #8C8C88;
+  margin: 0px;
+  padding: 10px 0px;
+
+  
+}
+
+#mainNav a {
+  padding: 0px 10px;
+  font-size: 1.2em;
+  
+  text-decoration: none;
+  color: black;
+}
+#mainNav a:hover {
+  color: #028D86;
+  border-bottom: 1px solid #028D86;
+  margin-bottom: -1px;
+}
+
+
+/* --------------Certifications---------------*/
+
+.certHead {
+  font-size: 4em;
+  
+  padding: 150px 0px 150px 0px;
+  display: flex;
+  justify-content: center;
+  text-decoration: underline overline;
+  text-decoration-color: #8C8C88;
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+  padding: 10px 0px;
+}
+
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.9);
+  background-color: white;
+  border-radius: 5px;
+  width: 380px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+.container {
+  margin-left: 12px;
+  line-height: 1.5em;
+}
+
+.container p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* On mouse-over, add a deeper shadow */
+
+
+
+
+
+/* --------------future---------------*/
+
+.futurePlans h2 {
+  margin: 3em 0em;
+  border-top: 3px solid black;
+  background-color: #8C8C88;
+  border-bottom: 3px solid black;
+  font-size: 3em;
+  display: flex;
+  justify-content: center;
+}
+
+.futurePlans p {
+  display: flex;
+  justify-content: center;
+  margin: 50px 50px 200px 50px;
+  
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+
+
+
+
+/*----------------footer---------------*/
+
+
+#footerNav {
+  display: flex;
+  justify-content: center;
+  background-color: #202426;
+  margin: 0px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  border-top: 1px solid rgb(58, 66, 75);
+
+  
+}
+
+#footerNav a {
+  padding: 0px 10px;
+  font-size: 1.2em;
+  cursor: pointer;
+  text-decoration: none;
+  color: seashell;
+  padding: 20px;
+}
+#footerNav a:hover {
+  color: seashell;
+  border-left: 1px solid #e2e7e7;
+  margin-left: -1px;
+}
+
+#copyright {
+  margin-top: -10px;
+  margin-bottom: -10px;
+  padding: 20px;
+  background-color: #202426;
+  color: seashell;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 1056px) {
+
+  #cards {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 50px;
+  }
+  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.9);
+    background-color: white;
+    border-radius: 5px;
+    width: 380px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .card img {
+    width: 380px;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+
+  #cards {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.9);
+    background-color: white;
+    border-radius: 5px;
+    width: 500px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .card img {
+    width: 500px;
+  }
+ .certHead {
+   font-size: 3em;
+   text-decoration: underline overline;
+   text-decoration-color: #8C8C88;
+ }
+}
+
+@media screen and (max-width: 414px) {
+
+  * {
+    margin: 0;
+  }
+
+  .certHead {
+    font-size: 3em;
+    line-height: 1.4em;
+    text-align: center;
+    padding: 150px 0px 150px 0px;
+    display: flex;
+    justify-content: center;
+  }
+  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.9);
+    background-color: white;
+    border-radius: 5px;
+    width: 350px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .card img {
+    width: 350px;
+  }
+
+}
+

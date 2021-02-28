@@ -1,0 +1,224 @@
+html {
+  font-family: 'Ubuntu', sans-serif;
+}
+body {
+  background-color: whitesmoke;
+  margin: 0px;
+  
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  ;
+}
+
+@keyframes color-changer {
+  0% {
+    color: black;
+  }
+
+  10% {
+    color: #373534;
+  }
+  20% {
+    color: #413E3D;
+  }
+  30% {
+    color: #65605F;
+  }
+  40% {
+    color: #7A7574;
+  }
+  50% {
+    color: #9F9897;
+  }
+  60% {
+    color: #7A7574;
+  }
+  70% {
+    color: #65605F;
+  }
+  
+  80% {
+    color: #413E3D;
+  }
+  90% {
+    color: #373534;
+  }
+  100% {
+    color: black;
+  }
+}
+
+
+#name {
+  display: flex;
+  justify-content: center;
+  font-size: 3em;
+  font-weight: 900;
+  animation-name: color-changer;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  background-color: #9DA65D;
+  padding: 32px 0px;
+  margin: 0px;
+}
+
+
+
+
+/* --------------top nav items---------------*/
+
+
+#mainNav {
+  display: flex;
+  justify-content: center;
+  background-color: #8C8C88;
+  margin: 0px;
+  padding: 10px 0px;
+
+  
+}
+
+#mainNav a {
+  padding: 0px 10px;
+  font-size: 1.2em;
+  
+  text-decoration: none;
+  color: black;
+}
+#mainNav a:hover {
+  color: #028D86;
+  border-bottom: 1px solid #028D86;
+  margin-bottom: -1px;
+}
+
+/* --------------Main Content---------------*/
+
+#mainSectionHead {
+  display: flex;
+  justify-content: center;
+  font-size: 3em;
+  margin-top: 100px;
+}
+
+body, html {
+  height: 100%;
+  
+}
+
+
+
+.hobby-h2 {
+  background-color: #202426;
+  color: seashell;
+  font-size: 3em;
+  padding: 250px 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.parallax {
+  /* The image used */
+  
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  
+  background-attachment: fixed;
+}
+
+.parallax.one {
+  background-image: url(../images/bear.jpg);
+  height: 100%;
+  
+}
+
+.parallax.two {
+  background-image: url(../images/hiking.jpg);
+  height: 100%;
+  vertical-align: bottom;
+}
+
+.parallax.three {
+  background-image: url(../images/boating.jpg);
+  height: 100%;
+  
+}
+
+.parallax.four{
+  background-image: url(../images/camping.jpg);
+  height: 100%;
+}
+
+.parallaxContent {
+  color: #028D86;
+  background-color: rgba(73, 87, 87, 0.753);
+  text-align: center;
+  
+  height: 220px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.parallaxContent h1 {
+  text-transform: uppercase;
+  font-size: 80px;
+  text-shadow: white 1px 0 10px;
+}
+
+.parallaxContent p {
+  font-size: 20px;
+  color: white;
+  text-shadow: white 1px 0 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 16px;
+}
+
+
+  
+
+
+/*----------------footer---------------*/
+
+
+#footerNav {
+  display: flex;
+  justify-content: center;
+  background-color: #202426;
+  margin: 0px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  border-top: 1px solid rgb(58, 66, 75);
+
+  
+}
+
+#footerNav a {
+  padding: 0px 10px;
+  font-size: 1.2em;
+  cursor: pointer;
+  text-decoration: none;
+  color: seashell;
+  padding: 20px;
+}
+#footerNav a:hover {
+  color: seashell;
+  border-left: 1px solid #e2e7e7;
+  margin-left: -1px;
+}
+
+#copyright {
+  margin-top: -10px;
+  margin-bottom: -10px;
+  padding: 20px;
+  background-color: #202426;
+  color: seashell;
+  width: 100%;
+}

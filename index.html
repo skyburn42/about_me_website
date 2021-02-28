@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/homepage.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
+  <script src="https://use.fontawesome.com/59bddc0738.js"></script>
+  <script src="https://kit.fontawesome.com/e3520768a7.js" crossorigin="anonymous"></script>
+
+  <title>Sky B</title>
+</head>
+
+<body>
+  <header>
+    <h1 id="name">Skylar Burningham</h1>
+    <nav id="mainNav">
+      <!-- Your nav links here -->
+      <a href="./index.html">Home</a>
+      <a href="./pages/dadlife.html">The Dad Life</a>
+      <a href="./pages/hobbies.html"> Hobbies</a>
+      <a href="./pages/contact.html"> Contact Me</a>
+    </nav>
+
+
+  </header>
+
+  <aside class="subscribe">
+    <i id="close" class="fa fa-times" aria-hidden="true" title="close"></i>
+    <h2>Welcome</h2>
+    <p>Hope you enjoy!</p>
+    <button class="subBtn" type="button" name="button"> Subscribe now </button>
+
+  </aside>
+
+  <script type="text/javascript">
+    // Closes the "Subscribe" popup
+    var close = document.querySelector('#close');
+    close.onclick = function () {
+      this.parentNode.style.display = 'none';
+    }
+  </script>
+
+  <main id="homeScreen">
+
+    <!-- Put some important information here -->
+    <img src="images/coverpage.JPG" class="homejpg translate" data-speed="-5.5">
+    
+  </main>
+
+  <section class="testing">
+    <div class="shadow"></div>
+    <div class="container">
+      <div class="content opacity">
+        <h3 class="title">About
+        <div class="border"></div>
+      </h3>
+        <p class="text"> Skylar Burningham</p>
+      </div>
+      <div class="portfolio opacity">
+        <a href="/pages/portfolio.html">View My Work </a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer>
+    <!-- Do you have a logo? Social media links? Contact Info -->
+    <nav id="footerNav">
+      <a href="../index.html">Home</a>
+      <a href="dadlife.html">The Dad Life</a>
+      <a href="#hobbies"> Hobbies</a>
+      <a href="contact.html"> Contact Me</a>
+    </nav>
+    <p id="copyright"> &copy Skytech Designs. All Rights Reserved</p>
+  </footer>
+
+  <script src="js/styling.js"></script>
+</body>
+
+</html>

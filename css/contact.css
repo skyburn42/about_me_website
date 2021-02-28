@@ -1,0 +1,249 @@
+html {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  background-color: whitesmoke;
+  margin: 0px;
+  width: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@keyframes color-changer {
+  0% {
+    color: black;
+  }
+
+  10% {
+    color: #373534;
+  }
+  20% {
+    color: #413E3D;
+  }
+  30% {
+    color: #65605F;
+  }
+  40% {
+    color: #7A7574;
+  }
+  50% {
+    color: #9F9897;
+  }
+  60% {
+    color: #7A7574;
+  }
+  70% {
+    color: #65605F;
+  }
+  
+  80% {
+    color: #413E3D;
+  }
+  90% {
+    color: #373534;
+  }
+  100% {
+    color: black;
+  }
+}
+
+#name {
+  display: flex;
+  justify-content: center;
+  font-size: 3em;
+  font-weight: 900;
+  padding-top: 32px;
+  animation-name: color-changer;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  background-color: #9DA65D;
+  padding: 32px 0px;
+  margin: 0px;
+  
+}
+
+/* --------------top nav items---------------*/
+
+
+#mainNav {
+  
+  display: flex;
+  justify-content: center;
+  background-color: #8C8C88;
+  margin: 0px;
+  padding: 10px 0px;
+
+  
+}
+
+#mainNav a {
+  padding: 0px 10px;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: black;
+}
+#mainNav a:hover {
+  color: #028D86;
+  border-bottom: 1px solid #028D86;
+  margin-bottom: -1px;
+}
+
+/*---------------content-------------------*/
+.contactBackground {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  
+  opacity: 50%;
+  text-align: center;
+  z-index: -1;
+}
+
+.contactHead {
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+}
+
+
+
+/*---------------socialbar-------------------*/
+#socialNav {
+  display: inline-flex;
+  
+  width: 100%;
+  justify-content: space-around;
+}
+
+ #socialNav ul li {
+ 
+  display: inline-flex;
+  
+  padding:0px 10px;
+  
+}
+
+
+
+#socialNav li a {
+  
+  text-decoration: none;
+  color: white;
+  margin: 15px;
+  transition: all .5s;
+  width: 100%;
+  
+}
+
+
+#socialNav a.fbbtn:hover {
+  color: skyblue;
+  text-shadow: 0px 0px 10px white; 
+     
+   }  
+   
+     
+   #socialNav a.instabtn:hover {
+  color:lightpink;
+  text-shadow: 0px 0px 10px white;
+  
+       
+   } 
+
+   #socialNav a.linkedbtn:hover {
+    color: royalblue;
+    
+   }
+
+   #socialNav a.ytbtn:hover {
+  color: red;
+  text-shadow: 0px 0px 10px white;     
+   }
+
+   #socialNav a.slackbtn:hover {
+     color: lime;
+     text-shadow: 0px 0px 10px white;
+
+   }
+
+   #socialNav a.twitterbtn:hover {
+     color: blue;
+   }
+
+   .formSection {
+     display: inline-flex;
+     
+     margin: 50px 33%;
+   }
+
+
+   #contactForm {
+     font-size: 1.5em;
+     background-color: hsl(teal, 50, .5);
+
+     border: 2px solid white;
+     
+   }
+
+   #contactForm input {
+     font-size: 1em;
+     opacity: 50%;
+   }
+
+
+
+
+
+
+
+
+
+
+   /*----------------footer---------------*/
+footer {
+  margin-top: 250px;
+}
+
+#footerNav {
+  display: flex;
+  justify-content: center;
+  background-color: #202426;
+
+  margin: 0px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  border-top: 1px solid rgb(58, 66, 75);
+
+z-index: 1;
+  
+}
+
+#footerNav a {
+  padding: 0px 10px;
+  font-size: 1.2em;
+  cursor: pointer;
+  text-decoration: none;
+  color: seashell;
+  padding: 20px;
+}
+#footerNav a:hover {
+  color: seashell;
+  border-left: 1px solid #e2e7e7;
+  margin-left: -1px;
+}
+
+#copyright {
+  margin-top: -10px;
+  margin-bottom: -10px;
+  padding: 20px;
+  background-color: #202426;
+  color: seashell;
+  width: 100%;
+}
+   

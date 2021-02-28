@@ -1,0 +1,302 @@
+html {
+  font-family: 'Ubuntu', sans-serif;
+
+}
+
+body {
+  background-color: #6c733d;
+  margin: 0px;
+
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@keyframes color-changer {
+  0% {
+    color: black;
+  }
+
+  10% {
+    color: #373534;
+  }
+  20% {
+    color: #413E3D;
+  }
+  30% {
+    color: #65605F;
+  }
+  40% {
+    color: #7A7574;
+  }
+  50% {
+    color: #9F9897;
+  }
+  60% {
+    color: #7A7574;
+  }
+  70% {
+    color: #65605F;
+  }
+  
+  80% {
+    color: #413E3D;
+  }
+  90% {
+    color: #373534;
+  }
+  100% {
+    color: black;
+  }
+}
+
+
+#name {
+  display: flex;
+  justify-content: center;
+  font-size: 3em;
+  font-weight: 900;
+  animation-name: color-changer;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  background-color: #9DA65D;
+  padding: 32px 0px;
+  margin: 0px;
+}
+
+
+
+
+/* --------------top nav items---------------*/
+
+
+#mainNav {
+  display: flex;
+  justify-content: center;
+  background-color: #8C8C88;
+  margin: 0px;
+  padding: 10px 0px;
+
+  
+}
+
+#mainNav a {
+  padding: 0px 10px;
+  font-size: 1.2em;
+  
+  text-decoration: none;
+  color: black;
+}
+#mainNav a:hover {
+  color: #028D86;
+  border-bottom: 3px solid #028D86;
+  margin-bottom: -3px;
+}
+
+
+
+
+/*-----------main content---------------*/
+
+#homeScreen {
+  margin-top: -16px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.homejpg {
+  display: flex;
+  width: 100%;
+  margin: 0px 250px;
+  height: 100%;
+  margin-top: 16px;
+}
+
+
+section {
+  width: 100%;
+  background-color: #202426;
+  position: relative;
+}
+
+section .container {
+  display: grid;
+  padding: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+}
+
+section .container > *{
+  margin: 2rem;
+}
+
+.content {
+  color: white;
+transform: translateY(-50px);
+}
+
+.title {
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: .5rem;
+  position: relative;
+}
+
+.text {
+  font-size: 2.5rem;
+}
+
+.border {
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: white;
+  bottom: 0;
+  left: 0;
+}
+
+.shadow {
+  position: absolute;
+  bottom: 100%;
+  height: 300px;
+  width: 100%;
+  left: 0;
+  z-index: 20;
+  background-color: linear-gradient(to top, #202426, transparent);
+}
+
+.opacity {
+  opacity: 0;
+}
+
+.portfolio {
+  display: flex;
+  background-color: #202426;
+  color: black;
+  justify-content: center;
+  transform: translateY(50px);
+  font-size: 1.5em;
+  border-radius:  4px solid green;
+  padding-top: 40px;
+  padding-bottom: 200px;
+  
+}
+
+
+
+.portfolio a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  background-color: slategray;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.portfolio a:hover {
+  color: slategray;
+  background-color: white;
+}
+
+/*--------------javaScript------------*/
+
+.subscribe {
+  position: fixed;
+  font-size: 1.8em;
+  top: 25%;
+  left: -700px;
+  width: 500px;
+  height: 300px;
+  animation: 1s 1s 1 forwards slide-in;
+  background:#305166;
+  border: 1px solid whitesmoke;
+  padding: 30px;
+  text-align: center;
+  padding-top: 50px;
+  box-shadow: 0 0 20px whitesmoke;
+  z-index: 21;
+}
+
+.subBtn {
+  background: black;
+  
+  border: none;
+  border-radius: 4px;
+  padding: 20px;
+  color: white;
+  text-transform: uppercase;
+
+     }
+     
+     .subBtn:hover {
+         background: dimgray;
+         text-shadow: 2px 2px 2px coral;
+     }
+     
+     .fa-times {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  cursor: pointer;
+         color: black;
+}
+@keyframes slide-in {
+  100% {
+    left: 50%;
+    margin-left: -275px;
+  }
+  
+}
+
+
+
+/*----------------footer---------------*/
+
+
+#footerNav {
+  display: flex;
+  justify-content: center;
+  background-color: #202426;
+  margin: 0px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  border-top: 1px solid rgb(58, 66, 75);
+
+  
+}
+
+#footerNav a {
+  padding: 0px 10px;
+  font-size: 1.2em;
+  cursor: pointer;
+  text-decoration: none;
+  color: seashell;
+  padding: 20px;
+}
+#footerNav a:hover {
+  color: seashell;
+  border-left: 1px solid #e2e7e7;
+  margin-left: -1px;
+}
+
+#copyright {
+  margin-top: -10px;
+  color: seashell;
+  margin-bottom: -10px;
+  padding: 20px;
+  background-color: #202426;
+  width: 100%;
+}
+
+
+@media (max-width: 620px) {
+  section .container {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+}
